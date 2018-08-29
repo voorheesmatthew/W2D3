@@ -10,7 +10,10 @@ class Game
     @towers = [[3,2,1],[],[]]
   end
   
-  
+  # def play 
+  #   #fjdpsa
+  #   Display.render(@towers)
+  # end 
 end
 
 class Display

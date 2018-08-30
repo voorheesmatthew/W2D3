@@ -18,16 +18,16 @@ RSpec.describe Deck do
   end
   
   describe "#deal!" do
-    before(:all) do 
+    before(:each) do 
       deck.shuffle!
-      last_card = deck.cards.last 
     end
-    
     it "returns the last card" do 
+      last_card = deck.cards.last 
       expect(deck.deal!).to eq(last_card)
     end 
     
     it "removes the last card from deck" do 
+      last_card = deck.cards.last 
       deck.deal!
       expect(deck.cards).to_not include(last_card)
     end
